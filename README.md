@@ -4,7 +4,7 @@ In this example I have created a jmeter collection based on spotify.
 To get a positive report you need to generate a new [Token](https://developer.spotify.com/console)
 Write Spotify Token into CSV data.csv
 
-[![docker-compose-actions-workflow](https://github.com/fziviello/docker-jmeter/actions/workflows/main.yml/badge.svg)](https://github.com/fziviello/docker-jmeter/actions/workflows/main.yml)
+[![docker-compose-actions-workflow](https://github.com/fziviello/docker-jmeter/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/fziviello/docker-jmeter/actions/workflows/main.yml)
 
 # Build Docker Image
 
