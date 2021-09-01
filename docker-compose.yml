@@ -1,0 +1,10 @@
+version: "2.0"
+services:
+  slave-1:
+      container_name: spotify
+      build: .
+      image: jmeter_report
+      command:
+        jmeter -n -t spotify.jmx -l logs/log.jtl -e -o reports
+      volumes:
+        - ./src:/etc/spotify
