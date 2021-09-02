@@ -9,5 +9,5 @@ jobs:
         run: docker-compose up
       - uses: actions/upload-artifact@v1
         with:
-          name: jmeter-test-results
+          name: results
           path: /
