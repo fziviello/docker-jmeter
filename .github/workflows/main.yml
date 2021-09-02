@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build the stack
+      - name: Step 1 - Run Docker
         run: docker-compose up
-      - name: Upload Results
+      - name: Step 2 - Attach Report
         uses: actions/upload-artifact@v2
         with:
           name: Report
