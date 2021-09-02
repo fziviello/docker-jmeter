@@ -4,9 +4,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-     - name: Apache JMeter
-       uses: rbhadti94/apache-jmeter-action@v0.3.2
-       with:
-          testFilePath: src/spotify.jmx
-          outputReportsFolder: reports/
-          args: "--loglevel INFO"
+      - uses: actions/checkout@v2
+      - name: Build the stack
+        run: docker-compose up
