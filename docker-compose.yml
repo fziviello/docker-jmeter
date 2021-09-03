@@ -5,6 +5,6 @@ services:
       build: .
       image: jmeter_report
       command:
-        sh -c "run.sh spotify.jmx smoke.properties"
+        sh -c "./../run.sh spotify.jmx smoke.properties"
       volumes:
         - ./src:/etc/spotify
