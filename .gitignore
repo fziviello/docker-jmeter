@@ -1,6 +1,6 @@
 # Mac specific file
 .DS_Store
-/reports/*.html
+/src/reports
 *.log
 *.jtl
 result.csv
