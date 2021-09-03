@@ -3,4 +3,4 @@
 /reports/*.html
 *.log
 *.jtl
-*results.csv
+result.csv

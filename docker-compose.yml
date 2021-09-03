@@ -3,9 +3,8 @@ services:
   slave-1:
       container_name: spotify
       build: .
-      stop_signal: SIGINT
       image: jmeter_report
       command:
-        sh -c "./run.sh spotify.jmx smoke.properties"
+        jmeter -n -t spotify.jmx -l result.jtl -e -o reports -q smoke.properties
       volumes:
         - ./src:/etc/spotify

@@ -1,8 +1,5 @@
 #!/bin/bash
 
-jmeter -n -t $1 -l result.jtl -e -o reports
-# -p $2
-
 REPORT_JTL=result.jtl
 REPORT_CSV=result.csv
 IFS=','
