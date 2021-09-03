@@ -1,7 +1,5 @@
 #!/bin/bash
 
-pwd
-ls -a
 REPORT_JTL=result.jtl
 REPORT_CSV=result.csv
 IFS=','
