@@ -7,11 +7,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Step 1 - Run Docker
         run: docker-compose up
-      - name: Exec Script
-      - run: |
-        $ ./test.sh
-      shell: bash
-      - name: Step 2 - Attach Report
+      - name: Step 2 - Run Test
+        run: ./src/test.sh
+      - name: Step 3 - Attach Report
         uses: actions/upload-artifact@v2
         with:
           name: Report
