@@ -1,6 +1,7 @@
 #!/bin/bash
 
-jmeter -n -t src/$1 -l result.jtl -e -o reports -p src/$2
+jmeter -n -t $1 -l result.jtl -e -o reports
+# -p $2
 
 REPORT_JTL=result.jtl
 REPORT_CSV=result.csv
@@ -15,7 +16,7 @@ do
         then
              echo "$label" : "$success"
         else
-             echo "$label" : "$success"
+             exit -1
         fi
     fi
 done < $REPORT_CSV
