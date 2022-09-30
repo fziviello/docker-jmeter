@@ -4,7 +4,10 @@ services:
       container_name: spotify
       build: .
       image: jmeter_report
-      command:
-        jmeter -n -t spotify.jmx -l result.jtl -e -o reports -q smoke.properties
+      command: >
+        bash -c "rm -rf reports:
+        && rm -rf *.jtl
+        && rm -rf *.log
+        && jmeter -n -t spotify.jmx -l result.jtl -e -o reports -q smoke.properties"
       volumes:
         - ./src:/etc/spotify
