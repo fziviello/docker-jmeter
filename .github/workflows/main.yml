@@ -12,5 +12,3 @@ jobs:
         with:
           name: Report
           path: ./src/reports
-      - name: Step 3 - Validate Test
-        run: ./src/test.sh
