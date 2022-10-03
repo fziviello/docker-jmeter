@@ -3,9 +3,9 @@ services:
   slave-1:
       container_name: spotify
       build: .
-      image: jmeter_report
+      image: spotify_jmeter
       command: >
-        bash -c "rm -rf reports:
+        bash -c "rm -rf reports
         && rm -rf *.jtl
         && rm -rf *.log
         && jmeter -n -t spotify.jmx -l result.jtl -e -o reports -q smoke.properties"
